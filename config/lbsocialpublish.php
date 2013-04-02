@@ -8,7 +8,7 @@
  * @author     Julien Huriez
  * @license    MIT License
  * @copyright  2013 Julien Huriez
- * @link   
+ * @link   https://github.com/jhuriez/fuel-lbSocialPublish
  */
 
 return array(
