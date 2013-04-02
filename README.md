@@ -9,14 +9,12 @@ FuelPHP package for easily post to multiple social networks (Facebook, Twitter, 
 1. Clone or download the fuel-lbSocialPublish repository
 2. Move it in fuel/packages/
 3. Edit the config file fuel/packages/lbsocialpublish/config/lbsocialpublish.php
-4. Add 'lbsocialpublish' to the 'always_load/packages' array in app/config/config.php (or call `Fuel::add_package('casset')` whenever you want to use it).
+4. Add 'lbsocialpublish' to the 'always_load/packages' array in app/config/config.php (or call `\Fuel\Core\Package::load('lbsocialpublish');` whenever you want to use it).
 
 If you don't want to change the config file in `fuel/packages/lbsocialpublish/config/lbsocialpublish.php`, you can create your own config file in `fuel/app/config/lbsocialpublish.php`.
 And copy the entirely of the original config file.
 
-<h2>Introduction</h2>
-
-<h3>Facebook</h3>
+<h2>Facebook</h2>
 
 ### Configuration
 
@@ -81,7 +79,7 @@ In your controller for get your access_token
     $socialPublish->publish();
 ```
 
-<h3>Twitter</h3>
+<h2>Twitter</h2>
 
 ### Configuration
 
@@ -105,7 +103,7 @@ And edit the configuration file
     $socialPublish->publish();
 ```
 
-## Complete usage
+### Complete usage
 
 ```php
     // Call the socialpublish manager
