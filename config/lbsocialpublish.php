@@ -14,32 +14,36 @@
 return array(
     'lb' => array(
         'socialpublish' => array(
+            // Always load
+            'always_load' => array(
+                'Lb\\SocialPublish\\Service\\FacebookPublish', 
+                'Lb\\SocialPublish\\Service\\TwitterPublish'
+            ),
+            
             // Facebook
             'facebook' => array(
-                'app_id' => '458642664187845',
-                'secret' => 'ff2b0aec1b4159e9410b8c24b0ab7362',
-                'page_id' => '401532766582915',
-                'access_token' => 'AAAGhIhET58UBAK5rlDcLU2MKUZBR6ZBQo2hVyYVZAHnBzMfUIdRtc6mZAtZAmMgPd9980SAzsQS0Ur9n6h9mtTrutA0S3mzPxECANAU9xK7YiXOwBw03r',
+                'app_id' => 'YOUR_APP_ID',
+                'secret' => 'YOUR_APP_SECRET',
+                'page_id' => 'YOUR_PAGE_ID',
+                'access_token' => 'YOUR_ACCESS_TOKEN',
             ),
             
             // Twitter
             'twitter' => array(
-                'consumer_key' => 'IFUTcLSSeAlAwDqzZWW74A',
-                'consumer_secret' => '75Nbt6IYQAqmUWrKBdji8k4BJlI0856op7KPQTRBEI',
-                'user_token' => '895009075-oLfL4SFpiX7DeVTxxCpXTJVFXluQNzcIPUIMcKHf',
-                'user_secret' => 'C2P3VzNEs8gjjQpADF7J1wYUUHGXLfWYIhXBfS8FZw',
+                'consumer_key' => 'YOUR_CONSUMER_KEY',
+                'consumer_secret' => 'YOUR_CONSUMER_SECRET',
+                'user_token' => 'YOUR_USER_TOKEN',
+                'user_secret' => 'YOUR_USER_SECRET',
                 
                 // Twitter > Bitly
                 'bitly' => array(
                     'enable' => true,
-                    'username' => 'o_1q2k2imlc6',
-                    'api_key' => 'R_b7ca5ceb33c7123fd582ba0b309cb990',
+                    'username' => 'YOUR_USERNAMER',
+                    'api_key' => 'YOUR_API_KEY',
                 ),
             ),
         ),
     ),
 );
 
-// http://developers.facebook.com/tools/explorer
-    
 /* End of file config/casset.php */

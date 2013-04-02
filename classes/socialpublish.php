@@ -18,10 +18,17 @@ class SocialPublish {
     protected $services = array();
     protected $servicesName = array();
 
-    public function __construct($services) {
+    public function __construct($services = array()) {
+        // Loads publish service in argument
         foreach ($services as $service) {
             $this->addService($service);
         }
+        
+        // Loads publish service in the config
+        $alwaysLoad = \Config::get('lb.socialpublish.always_load');
+        if (is_array($alwaysLoad))
+            foreach($alwaysLoad as $service)
+                $this->addService(new $service);
     }
 
     /**
@@ -64,8 +71,6 @@ class SocialPublish {
                 if ($this->services[$serviceName]->isValid()) {
                     $_res = $this->services[$serviceName]->publish();
                     $res = ($res) ? $_res : false;
-                } else {
-                    $res = false;
                 }
             }
         }

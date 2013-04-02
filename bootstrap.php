@@ -27,5 +27,7 @@ Autoloader::add_classes(array(
 	'tmhOAuth'                => __DIR__.'/vendors/tmhOAuth/tmhOAuth.php',
 ));
 
+// Load config
 \Config::load('lbsocialpublish');
+
 /* End of file bootstrap.php */
