@@ -97,5 +97,3 @@ class SocialPublish {
 class SocialPublish_Exception extends \FuelException {
     
 }
-
-/* End of file casset.php */
