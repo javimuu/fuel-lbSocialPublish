@@ -1,0 +1,6 @@
+[submodule "vendors/facebook-php-sdk"]
+	path = vendors/facebook-php-sdk
+	url = https://github.com/facebook/facebook-php-sdk.git
+[submodule "vendors/tmhOAuth"]
+	path = vendors/tmhOAuth
+	url = https://github.com/themattharris/tmhOAuth.git
